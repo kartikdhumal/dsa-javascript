@@ -1,0 +1,41 @@
+1. Reverse a string
+2. Check if a string is a palindrome
+3. Find the length of the longest substring without repeating characters
+4. Find the first non-repeating character in a string
+5. Count the number of vowels and consonants in a string
+6. Implement a function to perform basic string compression
+7. Check if two strings are anagrams of each other
+8. Implement a function to find the longest common prefix among an array of strings
+9. Implement the strstr function (find the first occurrence of a substring)
+10. Count the occurrences of a character in a string
+11. Find all permutations of a given string
+12. Check if a string contains only digits
+13. Convert a string to an integer
+14. Convert an integer to a string
+15. Implement the atoi function (convert string to integer)
+17. Find the length of the longest palindromic substring
+18. Find all substrings of a string
+19. Find the longest repeating substring
+20. Implement a function to check if a string contains all unique characters
+21. Remove all white spaces from a string
+22. Remove all duplicate characters in a string
+23. Find the smallest window in a string containing all characters of another string
+26. Check if a string is a valid number
+28. Check if a string is a valid palindrome ignoring non-alphanumeric characters
+30. Implement a function to return the count of distinct substrings of a string
+31. Find the longest common subsequence between two strings
+32. Replace all occurrences of a substring in a string
+33. Check if two strings are rotations of each other
+34. Find the minimum number of characters to be inserted to convert a string to a palindrome
+35. Split a string into words
+36. Find the longest word in a string
+37. Implement a function to capitalize the first letter of each word in a string
+38. Implement a function to reverse the words in a string
+39. Implement a function to check if a string is a valid email address
+40. Find the edit distance (Levenshtein distance) between two strings
+41. Implement a function to remove all adjacent duplicates in a string
+42. Check if one string is a subsequence of another string
+43. Implement a function to find the smallest rotation of a string that is lexicographically smallest
+44. Find the longest palindromic subsequence in a string
+
+45. Implement a function to determine if a string has all unique characters without using additional data structures

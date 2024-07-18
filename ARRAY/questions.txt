@@ -1,0 +1,84 @@
+1. Reverse an array
+
+2. Find the maximum element in an array
+
+3. Find the minimum element in an array
+
+4. Find the sum of all elements in an array
+
+5. Find the average of all elements in an array
+
+6. Check if an array contains a specific element
+
+7. Remove duplicates from an array
+
+8. Sort an array in ascending order
+
+9. Sort an array in descending order
+
+10. Find the occurrence of an integer in the array
+
+11. Move all the negative elements to one side of the array
+
+12. Find duplicates in an array
+
+13. Find the first repeating element in an array of integers
+
+14. Find the first non-repeating element in a given array of integers
+
+15. Rotate an array by k positions
+
+16. Merge two sorted arrays
+
+17. Find the Kth largest and Kth smallest number in an array
+
+18. Sort the array of 0s, 1s, and 2s
+
+19. Subarray with given Sum
+
+20. Find all pairs in an array that sum to a specific value
+
+21. Find the contiguous subarray with the maximum sum (Kadane's Algorithm)
+
+22. Find the length of the longest increasing subsequence
+
+23. Find the length of the longest consecutive sequence
+
+24. Find the missing number in an array of n-1 integers
+
+25. Find the majority element in an array
+
+26. Find duplicates in an array
+
+27. Find a peak element which is not smaller than its neighbors
+
+28. Find the median of two sorted arrays
+
+29. Check if an array is a subset of another array
+
+30. Implement a binary search on a sorted array
+
+31. Check if an array is sorted
+
+32. Implement a function to flatten a nested array
+
+33. Find the smallest missing positive integer in an array
+
+34. Partition an array into two subsets such that their sums are equal
+
+35. Find the number of inversions in an array
+
+36. Implement a function to shuffle an array randomly
+
+37. Find all unique triplets in an array that sum to zero
+
+38. Find the number of subarrays with a given sum
+
+39. Implement an algorithm to find the maximum difference between two elements in an array such that 
+the larger element comes after the smaller one
+
+40. two-sum program - Check if there are two numbers in an array that add up to a specific target (two sum problem)
+
+41. Find the maximum sum of a subarray of size k
+
+42. Implement the Dutch National Flag problem (sort an array of 0s, 1s, and 2s)
