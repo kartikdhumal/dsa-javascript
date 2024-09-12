@@ -2,6 +2,7 @@ var arr = [5, 1, 11, 5];
 var arr2 = [1, 2, 3, 5];
 
 function checkPartition(arr) {
+
     let totalSum = arr.reduce((acc, curr) => acc + curr, 0);
     if (totalSum % 2 != 0) {
         return false;

@@ -10,5 +10,9 @@ for (var i = 0; i < arr.length; i++) {
     }
 }
 
+let negatives = arr.filter((num) => num < 0);
+let positives = arr.filter((num) => num >= 0);
+console.log(negatives.concat(positives));
+
 console.log("Move negative character on starting");
 console.log(newArr);

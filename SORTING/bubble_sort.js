@@ -14,4 +14,8 @@ function bubbleSort(arr) {
 }
 
 console.log("Bubble Sort");
+console.log("Time complexity:");
+console.log("Worst Case: O(n^2) - occurs when the array is sorted in reverse order.");
+console.log("Average Case: O(n^2) - occurs with random order of elements.");
+console.log("Best Case: O(n) - occurs with an optimized version when the array is already sorted.")
 console.log(bubbleSort(arr));

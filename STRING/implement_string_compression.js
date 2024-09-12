@@ -6,8 +6,8 @@ function compressString(str) {
 
     for (let i = 0; i < str.length; i++) {
         count++;
-        if (i + 1 >= str.length || str.charAt(i) !== str.charAt(i + 1)) {
-            compressed += str.charAt(i) + count;
+        if (i + 1 >= str.length || str[i] !== str[i+1]) {
+            compressed += str[i] + count;
             count = 0;
         }
     }

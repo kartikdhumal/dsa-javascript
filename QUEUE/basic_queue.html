@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Queue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #queueDisplay {
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .queueBox {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .highlight {
+            background-color: #2ecc71;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #queueContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Queue Operations</h1>
+    <div id="queueContainer">
+        <button onclick="enqueue()">ENQUEUE</button>
+        <button onclick="dequeue()">DEQUEUE</button>
+        <button onclick="peep()">PEEP</button>
+        <button onclick="displayQueue()">DISPLAY</button>
+        <div id="queueDisplay"></div>
+    </div>
+
+    <script>
+        let myqueue = [];
+        let maxLength = 6;
+        let front = -1;
+        let rear = -1;
+
+        function enqueue() {
+            if (rear == maxLength - 1) {
+                alert("Queue Overflow");
+                return;
+            }
+            let val = prompt("Enter value to enqueue:");
+            if (val !== null) {
+                if (front == -1) {
+                    front = 0;
+                }
+                rear++;
+                myqueue[rear] = val;
+                alert("Inserted Successfully");
+                console.log(`${val} inserted`);
+                console.log(myqueue);
+                displayQueue();
+            }
+        }
+
+        function dequeue() {
+            if (front == -1 || front > rear) {
+                alert("Queue Underflow");
+                return;
+            }
+            let deqval = myqueue[front];
+            myqueue[front] = null;
+            if (front == rear) {
+                front = rear = -1;
+            }
+            else {
+                front++;
+            }
+
+            console.log(deqval + " Deleted Successfully");
+            console.log(myqueue);
+        }
+
+        function peep() {
+            if (myqueue.length === 0) {
+                alert("Queue is empty");
+                return;
+            }
+            alert("Front of queue: " + myqueue[front]);
+        }
+
+        function displayQueue() {
+            const queueDisplay = document.getElementById('queueDisplay');
+            queueDisplay.innerHTML = '';
+            if (front === -1) {
+                console.log('Queue is empty');
+                return;
+            }
+            for (let i = front; i <= rear; i++) {
+                console.log(myqueue[i] + " => ");
+            }
+            console.log("NULL");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Stack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #stackDisplay {
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .stackBox {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .highlight {
+            background-color: #2ecc71;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #stackContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Stack Operations</h1>
+    <div id="stackContainer">
+        <button onclick="push()">PUSH</button>
+        <button onclick="pop()">POP</button>
+        <button onclick="peep()">PEEP</button>
+        <button onclick="displayStack()">DISPLAY</button>
+        <div id="stackDisplay"></div>
+    </div>
+
+    <script>
+        let mystack = [];
+        let maxLength = 6;
+        let top = -1;
+        let peepIndex = -1;
+
+        function push() {
+            if (top === maxLength - 1) {
+                alert("Stack Overflow");
+                return;
+            }
+            let val = prompt("Enter value to push:");
+            if (val !== null) {
+                top++;
+                mystack[top] = val;
+                alert("Inserted Successfully");
+                displayStack();
+            }
+        }
+
+        function pop() {
+            if (top === -1) {
+                alert("Stack Underflow");
+                return;
+            }
+            mystack[top] = null;
+            top--;
+            displayStack();
+        }
+
+        function peep() {
+            if (top === -1) {
+                alert("Stack is empty");
+                return;
+            }
+            peepIndex = top;
+            displayStack();
+        }
+
+        function displayStack() {
+            const stackDisplay = document.getElementById('stackDisplay');
+            stackDisplay.innerHTML = '';
+            if (top === -1) {
+                stackDisplay.innerHTML = 'Stack is empty';
+                return;
+            }
+            for (let i = 0; i <= top; i++) {
+                const div = document.createElement('div');
+                div.className = 'stackBox';
+                div.textContent = mystack[i];
+                if (i === peepIndex) {
+                    div.classList.add('highlight');
+                }
+                stackDisplay.appendChild(div);
+            }
+        }
+    </script>
+</body>
+
+</html>

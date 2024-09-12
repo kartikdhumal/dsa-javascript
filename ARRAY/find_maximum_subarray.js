@@ -1,4 +1,4 @@
-var arr = [10, 20, 30, 40, 50, 60, 70];
+var arr = [5, 4, -1, 7, 8];
 let k = 3;
 
 function max_subarray(arr, k) {
